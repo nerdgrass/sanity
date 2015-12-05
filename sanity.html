@@ -3,12 +3,18 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <h1>Plaid Integration Proof of Concept</h1>
 
-  {{> hello}}
+  {{> loginButtons}}
+
+  {{#if currentUser}}
+    <p>Logged in as: <strong>{{currentUser.username}}</strong></p>
+
+    
+  {{/if}}
 </body>
 
-<template name="hello">
+<!-- <template name="hello">
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
-</template>
+</template> -->
